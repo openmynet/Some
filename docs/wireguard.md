@@ -121,7 +121,8 @@ DNS = 8.8.8.8
 
 [Peer]
 PublicKey = linux服务端公钥
-AllowedIPs = 0.0.0.0/1, 128.0.0.0/1 # 不要 0.0.0.0/0 否则会断网（win10系统）
+AllowedIPs = 10.0.0.0/24 # 不要 0.0.0.0/0 否则会断网（win10系统）
+# AllowedIPs = 0.0.0.0/1, 128.0.0.0/1 # 全局走vpn
 Endpoint = 1.1.1.1:12340 # 服务端IP:端口
 PersistentKeepalive = 21
 
